@@ -7,6 +7,8 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 /**
+ * channel初始化
+ *
  * @author wangmeng
  * @date 2019-08-04
  */

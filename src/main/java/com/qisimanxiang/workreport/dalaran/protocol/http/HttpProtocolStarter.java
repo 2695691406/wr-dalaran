@@ -54,7 +54,7 @@ public class HttpProtocolStarter {
         EventLoopGroup boss = new NioEventLoopGroup();
         EventLoopGroup work = new NioEventLoopGroup();
         bootstrap.group(boss, work)
-                .handler(new LoggingHandler(LogLevel.DEBUG))
+                .handler(new LoggingHandler(LogLevel.INFO))
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new HttpServerInitializer());
         ChannelFuture f = bootstrap.bind(new InetSocketAddress(port)).sync();
