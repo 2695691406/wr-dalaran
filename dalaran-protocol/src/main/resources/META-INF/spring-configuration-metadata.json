@@ -1,0 +1,20 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "sourceType": "com.qisimanxiang.workreport.dalaran.protocol.config.DalaranConfig.HttpConfig",
+      "name": "dalaran.http.port",
+      "description": "dalaran http port",
+      "type": "java.lang.Integer",
+      "defaultValue": 8080
+    },
+    {
+      "sourceType": "com.qisimanxiang.workreport.dalaran.protocol.config.DalaranConfig.HttpConfig",
+      "name": "dalaran.http.max-content",
+      "description": "dalaran http maxContent",
+      "type": "java.lang.Integer",
+      "defaultValue": 524288
+    }
+  ]
+}
