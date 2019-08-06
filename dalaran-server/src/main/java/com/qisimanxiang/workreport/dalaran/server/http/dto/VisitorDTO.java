@@ -1,4 +1,4 @@
-package com.qisimanxiang.workreport.dalaran.http.dto;
+package com.qisimanxiang.workreport.dalaran.server.http.dto;
 
 import lombok.Data;
 

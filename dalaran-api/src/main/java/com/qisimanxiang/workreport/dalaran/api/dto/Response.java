@@ -60,9 +60,10 @@ public class Response<T> implements Serializable {
     /**
      * 成功响应
      *
-     * @param t
-     * @param <T>
-     * @return
+     * @param t    对象
+     * @param <T>  范型
+     * @param code 响应码
+     * @return 响应对象
      */
     public static <T> Response<T> ok(T t, ResponseCode code) {
         Response<T> response = new Response<>();
@@ -76,9 +77,9 @@ public class Response<T> implements Serializable {
     /**
      * 成功响应
      *
-     * @param t
-     * @param <T>
-     * @return
+     * @param t   对象
+     * @param <T> 范型
+     * @return 响应对象
      */
     public static <T> Response<T> ok(T t) {
         Response<T> response = new Response<>();
@@ -92,8 +93,8 @@ public class Response<T> implements Serializable {
     /**
      * 失败响应
      *
-     * @param code
-     * @return
+     * @param code 响应码
+     * @return 响应对象
      */
     public static Response filed(CommonResponseCode code) {
         Response response = new Response<>();
@@ -106,7 +107,7 @@ public class Response<T> implements Serializable {
     /**
      * 失败响应
      *
-     * @return
+     * @return 响应对象
      */
     public static Response filed() {
         Response response = new Response<>();

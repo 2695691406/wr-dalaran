@@ -1,7 +1,7 @@
-package com.qisimanxiang.workreport.dalaran.http.service;
+package com.qisimanxiang.workreport.dalaran.server.http.service;
 
-import com.qisimanxiang.workreport.dalaran.http.dto.AuthorInfoDTO;
-import com.qisimanxiang.workreport.dalaran.http.dto.VisitorDTO;
+import com.qisimanxiang.workreport.dalaran.server.http.dto.AuthorInfoDTO;
+import com.qisimanxiang.workreport.dalaran.server.http.dto.VisitorDTO;
 
 /**
  * @author wangmeng

@@ -10,14 +10,14 @@ public interface ResponseCode {
     /**
      * 获取CODE
      *
-     * @return
+     * @return 响应码
      */
     int getCode();
 
     /**
      * 获取描述
      *
-     * @return
+     * @return 响应码描述
      */
     String getDesc();
 }

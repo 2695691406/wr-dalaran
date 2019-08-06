@@ -1,7 +1,7 @@
-package com.qisimanxiang.workreport.dalaran.http.service;
+package com.qisimanxiang.workreport.dalaran.server.http.service;
 
-import com.qisimanxiang.workreport.dalaran.http.dto.AuthorInfoDTO;
-import com.qisimanxiang.workreport.dalaran.http.dto.VisitorDTO;
+import com.qisimanxiang.workreport.dalaran.server.http.dto.AuthorInfoDTO;
+import com.qisimanxiang.workreport.dalaran.server.http.dto.VisitorDTO;
 import com.qisimanxiang.workreport.dalaran.protocol.http.annotation.DalaranProvider;
 import com.qisimanxiang.workreport.dalaran.protocol.http.annotation.HttpProtocol;
 import org.springframework.stereotype.Service;
@@ -23,17 +23,8 @@ public class AuthorServiceImpl implements AuthorService {
     @HttpProtocol(path = "author/ask")
     @Override
     public AuthorInfoDTO askAuthorInfo(VisitorDTO visitorDTO) {
+        //TODO 此处可用Dubbo、HSF等方式调用内部RPC服务。
         return AuthorInfoDTO.newInstance(visitorDTO);
     }
 
-//    /**
-//     * 使用方式错误
-//     * @param visitorDTO
-//     * @param name
-//     * @return
-//     */
-//    @HttpProtocol(path = "author/ask2")
-//    public AuthorInfoDTO askAuthorInfo(VisitorDTO visitorDTO,String name) {
-//        return AuthorInfoDTO.newInstance(visitorDTO);
-//    }
 }

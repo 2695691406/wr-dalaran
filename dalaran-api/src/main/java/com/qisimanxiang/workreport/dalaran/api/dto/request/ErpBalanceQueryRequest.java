@@ -12,6 +12,9 @@ import lombok.Data;
 @Data
 public class ErpBalanceQueryRequest extends AbstractRequest {
     private static final long serialVersionUID = 1353110950553994795L;
+    /**
+     * 用户ID
+     */
     private Long userId;
 
     @Override
