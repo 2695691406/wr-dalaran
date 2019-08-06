@@ -7,7 +7,7 @@
         <artifactId>dalaran</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>dalaran-demo</artifactId>
+    <artifactId>dalaran-server</artifactId>
     <version>${parent.version}</version>
     <name>dalaran-demo</name>
     <description>Demo project</description>
