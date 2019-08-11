@@ -1,6 +1,6 @@
 package com.qisimanxiang.workreport.dalaran.protocol.http;
 
-import io.netty.channel.ChannelHandler;
+import com.qisimanxiang.workreport.dalaran.protocol.log.DalaranLogger;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -15,12 +15,12 @@ import io.netty.handler.codec.http.HttpServerCodec;
  */
 public class HttpServerInitializer extends ChannelInitializer<SocketChannel> {
 
-    private ChannelHandler handler;
+    private DalaranLogger logger;
     private int maxContentLength;
     private int defaultContentLength = 512 * 1024;
 
-    public HttpServerInitializer(ChannelHandler handler, int maxContentLength) {
-        this.handler = handler;
+    public HttpServerInitializer(DalaranLogger logger, int maxContentLength) {
+        this.logger = logger;
         this.maxContentLength = maxContentLength < defaultContentLength ? defaultContentLength : maxContentLength;
     }
 
@@ -34,7 +34,7 @@ public class HttpServerInitializer extends ChannelInitializer<SocketChannel> {
         pipeline.addLast(
                 "httpAggregator",
                 new HttpObjectAggregator(maxContentLength));
-        pipeline.addLast(handler);
+        pipeline.addLast(new HttpRequestHandler(logger));
 
     }
 }

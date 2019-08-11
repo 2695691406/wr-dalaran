@@ -21,6 +21,7 @@ public class DalaranDemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("启动");
         starter.start();
     }
 }

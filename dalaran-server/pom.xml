@@ -9,7 +9,7 @@
     </parent>
     <artifactId>dalaran-server</artifactId>
     <version>${parent.version}</version>
-    <name>dalaran-demo</name>
+    <name>dalaran-server</name>
     <description>Demo project</description>
 
     <properties>

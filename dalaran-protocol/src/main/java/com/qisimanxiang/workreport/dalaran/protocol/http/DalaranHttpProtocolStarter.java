@@ -71,6 +71,6 @@ public class DalaranHttpProtocolStarter {
 
     private HttpServerInitializer createChannelInitializer(){
         int maxContent = config.getHttp().getMaxContent();
-        return new HttpServerInitializer(new HttpRequestHandler(logger),maxContent);
+        return new HttpServerInitializer(logger,maxContent);
     }
 }
