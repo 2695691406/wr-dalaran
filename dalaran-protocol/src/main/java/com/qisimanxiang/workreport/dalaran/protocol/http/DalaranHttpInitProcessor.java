@@ -1,4 +1,4 @@
-package com.qisimanxiang.workreport.dalaran.protocol.http.processor;
+package com.qisimanxiang.workreport.dalaran.protocol.http;
 
 import com.qisimanxiang.workreport.dalaran.protocol.common.MethodInfo;
 import com.qisimanxiang.workreport.dalaran.protocol.config.DalaranConfig;

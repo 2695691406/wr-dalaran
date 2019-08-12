@@ -26,9 +26,14 @@ docker images
 
 echo 'docker任务正在执行: run docker ....'
 sleep 2s
-docker run -p 8080:8080  --name dalaran -d dalaran:latest
+docker run -p 8080:8080  --name dalaran -e DALARAN-ENABLE=true -v /tmp:/tmp -d dalaran:latest
 docker ps -a
 
 echo 'docker应用启动成功: 检查集成平台服务接口....'
 sleep 2s
 curl -X POST   http://localhost:8080/author/ask  -H 'content-type: application/json'  -d '{ "name":"visitor name"}'
+echo ' '
+
+echo 'docker应用日志信息: tail -f ....'
+sleep 1s
+tail -n 10 /tmp/dalaran.log

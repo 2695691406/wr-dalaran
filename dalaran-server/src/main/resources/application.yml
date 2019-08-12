@@ -1,3 +1,9 @@
-
+#本地debug，请将此开关打开
 dalaran:
-  enable: true
+  enable: ${DALARAN-ENABLE:false}
+  http:
+    port: ${DALARAN-HTTP-PORT:8080}
+    max-content: ${DALARAN-HTTP-MAX-CONTENT:52488}
+
+logging:
+  file: /tmp/dalaran.log

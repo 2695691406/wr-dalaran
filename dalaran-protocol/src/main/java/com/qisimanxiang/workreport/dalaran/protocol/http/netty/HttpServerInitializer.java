@@ -1,4 +1,4 @@
-package com.qisimanxiang.workreport.dalaran.protocol.http;
+package com.qisimanxiang.workreport.dalaran.protocol.http.netty;
 
 import com.qisimanxiang.workreport.dalaran.protocol.log.DalaranLogger;
 import io.netty.channel.ChannelInitializer;

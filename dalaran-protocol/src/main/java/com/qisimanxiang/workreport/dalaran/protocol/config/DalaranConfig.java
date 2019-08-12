@@ -2,6 +2,7 @@ package com.qisimanxiang.workreport.dalaran.protocol.config;
 
 
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import javax.annotation.PostConstruct;
@@ -16,6 +17,7 @@ import java.io.Serializable;
         ignoreUnknownFields = true
 )
 @Data
+@Slf4j
 public class DalaranConfig {
     private HttpConfig http;
 
@@ -34,5 +36,6 @@ public class DalaranConfig {
             http.port = 8080;
             http.maxContent = 512 * 1024;
         }
+        log.info(this.getClass().getName() + " init success.");
     }
 }

@@ -1,6 +1,7 @@
 package com.qisimanxiang.workreport.dalaran.protocol.http;
 
 import com.qisimanxiang.workreport.dalaran.protocol.config.DalaranConfig;
+import com.qisimanxiang.workreport.dalaran.protocol.http.netty.HttpServerInitializer;
 import com.qisimanxiang.workreport.dalaran.protocol.log.DalaranLogger;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

@@ -3,6 +3,13 @@
   "groups": [],
   "properties": [
     {
+      "sourceType": "com.qisimanxiang.workreport.dalaran.protocol.config.DalaranAutoConfig",
+      "name": "dalaran.enable",
+      "description": "enable dalaran",
+      "type": "java.lang.Boolean",
+      "defaultValue": false
+    },
+    {
       "sourceType": "com.qisimanxiang.workreport.dalaran.protocol.config.DalaranConfig.HttpConfig",
       "name": "dalaran.http.port",
       "description": "dalaran http port",
