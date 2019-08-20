@@ -1,6 +1,6 @@
 #本地debug，请将此开关打开
 dalaran:
-  enable: ${DALARAN-ENABLE:false}
+  enable: ${DALARAN-ENABLE:true}
   http:
     port: ${DALARAN-HTTP-PORT:8080}
     max-content: ${DALARAN-HTTP-MAX-CONTENT:52488}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.4.0
+Build-Jdk-Spec: 12
+Implementation-Title: dalaran-agent
+Implementation-Version: 0.0.1-SNAPSHOT
+Premain-Class: com.qisimanxiang.workreport.dalaran.agent.pre.SimpleAgent
+Agent-Class: com.qisimanxiang.workreport.dalaran.agent.running.SimpleRunningAgent
+Can-Retransform-Classes: true
+

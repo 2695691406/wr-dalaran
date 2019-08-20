@@ -22,6 +22,7 @@
     <modules>
         <module>dalaran-protocol</module>
         <module>dalaran-server</module>
+        <module>dalaran-agent</module>
         <module>dalaran-api</module>
     </modules>
 
